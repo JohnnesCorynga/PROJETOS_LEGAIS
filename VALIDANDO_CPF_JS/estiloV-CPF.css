@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+
+body{
+    background-color: yellow;
+    margin: auto;
+    text-align: center;
+    font: normal 25px arial;
+    color: linear-gradient(to top black, red 50%)
+
+}
+#cpf{
+    font: normal 25px arial;
+    min-width: 320px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+#button{
+    background-color: rgb(196, 196, 196);
+    text-shadow: 1px 2px 3px rgb(131, 130, 130);
+    font: normal 20px "arial black";
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+}
+.conteiner{
+    width:500px;
+    margin: auto;
+    position: relative;
+}
+.conteiner img {
+    border-radius: 15px;
+    width: 100%;
+}
+#cpfImagem{
+    height: 25px;
+    width: 195px;
+    background-color:#ddddeb;
+    position: absolute;
+    text-align: center;
+    color: #01326B;
+    padding: 5px;
+    border-radius: 5px;
+    top: 150px;
+    left: 150px;
+}
+#cpfImagem p{
+    background-color:#ddddeb;
+}
+#validando{
+    font-size: 20px;
+    background-color:#ddddeb;
+    color: red;
+    height: 40px;
+    min-width: 489px;
+    position: absolute;
+    padding: 5px;
+    border-radius: 5px;
+    top: 312px;
+}
+.comeco{
+    max-width: 700px;
+    margin: auto;
+    text-align: justify;
+}
+footer{
+    background-color: black;
+    min-height: 200px;
+    color: white;
+    font: italic 20px "time new romam";
+}
+a{
+    text-decoration: none;
+    color: rgb(4, 248, 248) ;
+}
+a:visited{
+    color: rgb(4, 248, 248) ;
+}
+a:hover{
+    color: rgb(14, 201, 201) ;
+
+}

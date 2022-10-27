@@ -1,0 +1,31 @@
+body{
+background: rgb(57, 68, 216);
+font: normal 25pt Arial;
+}
+input{
+    font: normal 25px arial;
+}
+option{
+    font: normal 25px arial;
+    text-align: center;
+}
+div.hidden{ 
+    display: none; /* esse comando faz com que as div (no caso, class='hidden) seja ocultada*/
+}
+header {
+color: white;
+text-align: center;
+}
+section {
+background: white;
+border-radius: 10px;
+padding: 15px;
+width: 800px;
+margin: auto;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+}
+footer{
+color: white;
+text-align: center;
+font-style: italic;
+}

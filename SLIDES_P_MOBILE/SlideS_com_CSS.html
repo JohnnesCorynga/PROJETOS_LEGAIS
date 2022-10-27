@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIDER COM CSS</title>
+    <style>
+        .conteudo{
+            background-image: linear-gradient(to left, rgb(32, 144, 229),rgb(118, 187, 239)
+            );
+            display: flex;
+            width: 350px;
+            scroll-snap-type: x mandatory;
+            scroll-padding: 25px;
+            column-gap: 20px;
+        }
+        .card{
+            background-image: linear-gradient(to left, rgb(32, 144, 229),rgb(118, 187, 239)
+            );
+            flex: 0 0 100%;
+            padding: 30px;
+            scroll-snap-align: start;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main class="conteudo">
+        <article class="card">
+                <h1>HTML</h1>
+            <span>HTML - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto laborum voluptate dolorum itaque, recusandae, veritatis commodi fugiat vitae adipisci ad repudiandae error illo expedita, quaerat officiis qui possimus pariatur temporibus!</span>
+        </article>
+        <article class="card">
+                <h1>CSS</h1>
+            <span>CSS - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto laborum voluptate dolorum itaque, recusandae, veritatis commodi fugiat vitae adipisci ad repudiandae error illo expedita, quaerat officiis qui possimus pariatur temporibus!</span>
+        </article>
+        <article class="card">
+                <h1>JavaScript</h1>
+            
+            <span>JavaScript - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto laborum voluptate dolorum itaque, recusandae, veritatis commodi fugiat vitae adipisci ad repudiandae error illo expedita, quaerat officiis qui possimus pariatur temporibus!</span>
+        </article>
+        <article class="card">
+                <h1>PHP</h1>
+            <span>PHP - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto laborum voluptate dolorum itaque, recusandae, veritatis commodi fugiat vitae adipisci ad repudiandae error illo expedita, quaerat officiis qui possimus pariatur temporibus!</span>
+        </article>
+        <article class="card">
+                <h1>MySQL</h1>
+            
+            <span>MySQL - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto laborum voluptate dolorum itaque, recusandae, veritatis commodi fugiat vitae adipisci ad repudiandae error illo expedita, quaerat officiis qui possimus pariatur temporibus!</span>
+        </article>
+    </main>
+
+
+
+</body>
+</html>

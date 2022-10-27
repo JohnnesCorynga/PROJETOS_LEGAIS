@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gentium Book Plus', serif;
+    border: none;
+    
+}
+body{
+    padding-top: 5vh;
+    background-size: cover;
+    background-image: url("../img/two.jpg");
+    background-position-y: -150px;
+
+}
+#main-container{
+    background-color: #ffffff;
+    width: 500px;
+    margin:auto auto;
+    padding: 25px;
+    border-radius: 8px;
+}
+#register-form2{
+    display: block;
+}
+h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
+    margin-top: 20px;
+}
+.spacing{
+    margin-right: 2.5%;
+    margin-top: 20px;
+}
+.full-box, .first{
+    flex: 1 1 100%;
+    position: relative;
+}
+
+label{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+input{
+    border-bottom: 2px solid #885d02;
+    padding: 5px;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+input:focus {
+    border-color: #e65400;
+}
+input, label{
+    display: block;
+    outline: none;
+    width: 100%;
+}
+input[type="submit"]{
+    background-color: #e65400;
+    color: #FFF;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+#btn-submit:hover{
+    background-color: #b64300;
+}
+
+a{
+    color: #885d02;
+}
+#agreement{
+    margin-right: 5px;
+}
+#agreement, #agreement-label{
+    display: inline-block;
+    width: auto;
+}
+.error-validation{
+    color: #d80000;
+    position: absolute;
+    top: 57px;
+    font-size: 14px;
+}
+.template{
+    display: none;
+    margin: 15px;
+}
+.checkbox{
+    margin-top: "30px";
+}

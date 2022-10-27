@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+        <div id="main-container">
+            <h3>Entrar</h3>
+            <form action="" id="register-form2" >
+                <div>
+                    <div class="full-box first">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" class="email" id="email" placeholder="Digite seu em@ail.com" data-min-length="2"  data-email-validate>
+                        <!--Coloquei data-min-length para dizer que o mínimo de caracteres é 3-->
+                    </div>
+                    <div class="half-box spacing">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" class="password" id="password" placeholder="***********" data-password-validate data-required >
+                    </div>
+                    
+                    <div class="checkbox">
+                        <input type="checkbox" onclick="password_show()" name="agreement" id="agreement">
+                        <label for="agreement" id="agreement-label" >Mostrar senha</label><br>
+                    </div> 
+                </div>
+
+                <div>
+                    
+                    
+                    <div class="checkbox">
+                        <input type="checkbox" name="agreement" id="agreement">
+                        <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso</a></label><br>
+                    </div>
+                    
+                    <div class="full-box">
+                        <input onclick="entrar()" type="submit" id="btn-submit" value="Entrar">
+                    </div>
+                    <p>Não possui conta? <a href="index_cadastro.html">Cadastre-se</a>.</p>
+                </div>
+
+            </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="js/function.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Horas Extras</title>
+    <link rel="stylesheet" href="estilo.css">
+  
+</head>
+<body>
+    <header>
+      <h1>Calculadora de Horas Extras</h1>
+    </header>
+    <section>
+        <div class="primeiro_valor">
+            Salário na Carteira: <span>R$ </span>
+            <input type="number" id="salarioM" placeholder="R$ 1.599,00" style="width: 200px; height: 35px;"><br>
+            Horas por mês: <input type="number" id="horaMes" name="horaMes1" placeholder="Ex: 220"  style="width: 200px; height: 35px;"><span>Horas/M</span> 
+            <input type="button" value="Calcular" onclick="calcular()">
+        </div>
+
+        <div id="segundo_valor" class="hidden" onclick="calcular()"><!--A CLASS hidden faz com que essa div seja ocultada-->
+           
+             Horas Extras: 
+             <input type="number" id="horaextra" style="width: 80px; height: 25px;" placeholder="Horas" >De 
+             <input type="number" id="porcentagem" style="width: 200px; height: 25px;" placeholder="Porcentagem %" ><strong>%</strong>
+             <input type="button" value="Adicionar" onclick="adicionar()">
+            <select id="resultado" name="resultado" size="10" style="width: 800px;">
+                <option id="resto" style="align-items: center;"></option>
+            </select> <br>
+            <input type="button" value="Gerar Relatório" onclick="gerar()">
+            
+        </div>
+        <div id="resultadoFinal"></div>
+    </section>
+
+
+
+
+<footer>
+<p>&copy; @ravier_eros_Oficial</p>
+</footer>
+
+<script src="jsErosScript.js"></script>
+</body>
+</html>
