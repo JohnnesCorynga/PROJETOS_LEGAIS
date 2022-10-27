@@ -1,0 +1,127 @@
+*{ /*tag Global aplica para todos elementos*/
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+body{
+   min-height: 100vh;
+   background: linear-gradient(45deg,#121212,#212b46);
+}
+.navegation{
+    position:fixed ;
+    right: 20px;
+    top: 20px;
+    height: 20px;    
+    width: 250px;
+    z-index: 100; 
+     
+}
+.toggle{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 40px;
+    background-color: rgb(128, 119, 119);
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #ff216d;
+    padding: 5px 20px;
+    border-radius: 10px 50px;
+}   
+
+.toggle::before{
+    content: 'Menu';
+    margin-right: 10px;
+    
+    
+}
+.toggle.active::before{
+    content: 'Close';   
+}
+
+
+
+.toggle span{
+    position: relative;
+    width: 20px;
+    height: 50px;
+
+}
+.toggle span::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff216d;
+    transition: 0.5s;
+    
+
+}
+.toggle span::after{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff216d;
+    transition: 0.5s;
+
+}
+.toggle.active span::before{
+    transform: rotate(225deg);
+    top: 24px;
+}
+.toggle.active span::after{
+    transform: rotate(135deg);
+    bottom: 24px;
+    
+    
+}
+ul{
+    position: relative;
+    list-style: none;
+    display: flex;flex-direction: column;
+    
+}
+ul li{
+    position: relative;
+    list-style: none;
+    transition: .4s;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-250px);
+    transition-delay: calc(0.1s * var(--i));
+}
+ul li a{
+    position: relative;
+    text-decoration: none;
+    display: block;
+    padding: 5px 20px;   
+    height: 40px;
+    background-color:#fff ;
+    color:black;
+    transition: 0.5s;
+    text-align: right;
+    margin-top: 1px;
+    border-radius: 10px 50px;
+    font-size: 15pt;    
+}
+ul li a:hover{
+    background-color: rgb(159, 163, 219);
+    color: #ff216d;
+    transition: 0;
+
+    
+}
+.navegation.active li{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0px);
+}
